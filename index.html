@@ -49,35 +49,89 @@
         </section>
     </main>
     <header class="container" id="home">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Vydelka</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link smooth" href="#home">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smooth" href="#products">Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link smooth" href="#contacts">Contacts</a>
-                    </li>
-                </ul>
-                <div>
-                    <a class="nav-link" href="#cartModal" data-toggle="modal">
-                      <i class="fas fa-shopping-cart"></i>
-                        Cart<span id="cart-badge" class="badge badge-light"></span>
-                    </a>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Vydelka</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link smooth" href="#home"
+                >Home<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link smooth" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <div>
+            <a class="nav-link" href="#cartModal" data-toggle="modal">
+              <i class="fas fa-shopping-cart"></i>
+              Cart<span id="cart-badge" class="badge badge-light"></span>
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
-     <footer class="container">
+
+    <!-- Modal Product Info -->
+    <div
+      class="modal fade"
+      id="productInfoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="productInfoLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="productInfoLabel">Product Info</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="card-img-top" src="" alt="" />
+            <h4 class="card-title"></h4>
+            <p class="card-text"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button class="btn btn-primary buy" data-id="id">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
       <h2 id="contacts">Contact us</h2>
-      <p>Copyright by <a href="https://programmingmentor.com">Programming Mentor</a></p>
+      <p>
+        Copyright by
+        <a href="https://programmingmentor.com">Programming Mentor</a>
+      </p>
     </footer>
   </body>
 </html>
